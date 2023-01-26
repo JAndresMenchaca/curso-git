@@ -1,0 +1,13 @@
+pwd  # ver directorio de trabajo
+git init # iniciar un repositorio
+git status # ver el estado de los archivos
+git add index.html # añadir un archivo al repositorio
+git commit -m "Add index.html" # subir una nueva version del codigo
+git checkout f4e01 # volver a una version anterior
+git checkout master # volver a la ultima version
+git reset f4e01 # sobreescribir los cambios en un commit ya creado
+git reset --hard c255fb # si queremos borrar todos los cambios que hicimos despues de hacer el commit, vuelve a la version original de esa version.
+			Si lo aplicamos en una version que no es el master, el commit se borra por completo.
+git log --oneline # muestra los commits pero en una sola linea
+rm index.html # Borrar el archivo
+git restore index.html # recuperar el archivo

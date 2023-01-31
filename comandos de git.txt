@@ -49,5 +49,7 @@ git push -u origin feature-post-styles # crear rama en GitHub
 
 git checkout master # volver a la rama de master
 
+git pull # fusionar las ramas de forma local
+
 
 

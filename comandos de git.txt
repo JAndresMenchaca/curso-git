@@ -41,4 +41,13 @@ ORDEN:
 4. git push
 
 
+git checkout  -b feature-post-styles # se utiliza para cambiar o crear una rama
+
+git branch # nos muestra la rama en la que estamos, y las ramas disponibles
+
+git push -u origin feature-post-styles # crear rama en GitHub
+
+git checkout master # volver a la rama de master
+
+
 

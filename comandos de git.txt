@@ -28,9 +28,10 @@ git add . # añadir todas los archivos de ese directorio
 git remote add origin git@github.com:JAndresMenchaca/curso-git.git # establecer el origen del servidor remoto, para subir el proyecto al repositorio de Github
 
 git remote -v # para ver el origen
+
 pass # sotwa195anders
 
-git push origin MASTER # poner la rama qu equeremos subir
+git push origin MASTER # poner la rama que queremos subir, si ponemos -u antes de origin se crea la nueva rama y se sube todo
 
 git clone git@github.com:JAndresMenchaca/curso-git.git # descargar repositorio
 ORDEN:
@@ -67,8 +68,14 @@ git log --graph # con gragico
 Si hicieramos el rebase estando en feature-affiliate-links y trayendo front, no haría falta hacer el merge del final. Es decir:
 
 git checkout feature-affiliate-links
-git rebase -i front
+git rebase -i *nombre_rama*
 Al hacer un merge o rebase es mejor pensarlo como "qué rama me quiero traer aquí?" en lugar de "dónde me quiero llevar esta rama?"
+
+git branch -d *nombre_rama* # borra una rama
+
+git branch -D *nombre_rama* # la borra sin importarle nada
+
+
 
 
 

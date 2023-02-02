@@ -21,7 +21,7 @@ git log --oneline # muestra los commits pero en una sola linea
 
 rm index.html # Borrar el archivo
 
-git restore index.html # recuperar el archivo
+git restore index.html # recuperar el archivo, si ya existe lo pone en la version original
 
 git add . # añadir todas los archivos de ese directorio
 
@@ -75,7 +75,19 @@ git branch -d *nombre_rama* # borra una rama
 
 git branch -D *nombre_rama* # la borra sin importarle nada
 
+git commit --amend -m "cambio video 3" # sirve para reemplazar la descripcion del ultimo commit
 
+git stash # deshacer los cambios sin perderlos
+git stash pop # volver a tener lo que borramos
+
+versionado semantico
+
+git tag -a v0.1.0 -m "Primera version" # es para poner versiones a los commits
+git tag # listado de tags
+git show v0.1.0 # nos muestra los detalles de la version 
+git push origin v0.1.0 # lo lleva a GitHub
+
+.gitignore
 
 
 

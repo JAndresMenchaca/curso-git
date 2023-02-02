@@ -43,13 +43,32 @@ ORDEN:
 
 git checkout  -b feature-post-styles # se utiliza para cambiar o crear una rama
 
-git branch # nos muestra la rama en la que estamos, y las ramas disponibles
+git branch # nos muestra la rama en la que estamos, y las ramas disponibles. Si la creamos desde una rama secundaria, se crea a partir de esa rama
 
 git push -u origin feature-post-styles # crear rama en GitHub
 
 git checkout master # volver a la rama de master
 
 git pull # fusionar las ramas de forma local
+
+git merge _nombre_rama_ # fusionar dos ramas en local. Antes, en la rama secundaria debemos hacer un add, commit. Y luego en la rama donde queremos los cambios hacemos merge
+
+git log --graph --oneline
+
+git remote -v # ver el origin
+
+git commit -a -m "Cambio backend 2" # atajo para ya no hacer git add .
+
+git log -n 3 # pedir un numero especifico de los ultimos commits
+
+git log --graph # con gragico
+
+
+Si hicieramos el rebase estando en feature-affiliate-links y trayendo front, no haría falta hacer el merge del final. Es decir:
+
+git checkout feature-affiliate-links
+git rebase -i front
+Al hacer un merge o rebase es mejor pensarlo como "qué rama me quiero traer aquí?" en lugar de "dónde me quiero llevar esta rama?"
 
 
 

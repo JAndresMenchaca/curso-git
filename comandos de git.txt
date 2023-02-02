@@ -57,3 +57,18 @@ git log --graph --oneline
 
 git remote -v # ver el origin
 
+git commit -a -m "Cambio backend 2" # atajo para ya no hacer git add .
+
+git log -n 3 # pedir un numero especifico de los ultimos commits
+
+git log --graph # con gragico
+
+
+Si hicieramos el rebase estando en feature-affiliate-links y trayendo front, no haría falta hacer el merge del final. Es decir:
+
+git checkout feature-affiliate-links
+git rebase -i front
+Al hacer un merge o rebase es mejor pensarlo como "qué rama me quiero traer aquí?" en lugar de "dónde me quiero llevar esta rama?"
+
+
+

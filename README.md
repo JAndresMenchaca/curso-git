@@ -32,8 +32,6 @@ git remote add origin git@github.com:JAndresMenchaca/curso-git.git # establecer 
 
 git remote -v # para ver el origen
 
-pass # sotwa195anders
-
 git push origin MASTER # poner la rama que queremos subir, si ponemos -u antes de origin se crea la nueva rama y se sube todo
 
 git clone git@github.com:JAndresMenchaca/curso-git.git # descargar repositorio
